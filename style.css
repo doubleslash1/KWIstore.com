@@ -8,7 +8,7 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 1% 0;
-    background-color: #0A0A0A;
+    background-color: #121212;
 }
 nav{
     width: 30%;
@@ -20,6 +20,12 @@ nav{
     text-decoration: none;
     color: antiquewhite;
 }
+/* #line{ */
+    /* height: 1px; */
+    /* width: 100%; */
+    /* background-color: white; */
+    /* margin-top: 1%; */
+/* } */
 main{
     display: flex;
     flex-direction: column;
@@ -27,29 +33,36 @@ main{
 }
 .preview{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: flex-end; */
+    justify-content: center;
     align-items: flex-start;
-    width: 80%;
+    width: 100%;
 }
 .text{
     color: aliceblue;
-    width: 38%;
+    width: 100%;
     font-size: 22px;
     margin: 2%;
 }
 #div__p{
     margin: -6% 0 0;
 }
+.div__a:hover{
+    background-color:#0066FF;
+}
+.link:hover{
+    color: #0066FF;
+}
 .preview_img{
-    width: 47%;
+    width: 55%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 4%;
+    align-items: flex-end; 
 }
 .preview_img img{
     width: 100%;
     border: 1px solid #0066FF;
+    margin: 4% -9% 0;
 }
 .statistic{
     display: flex;  
@@ -58,7 +71,12 @@ main{
     text-align: center;
     color: aliceblue;
     font-size: 15px;
-    margin: 2%; 
+    margin: 8% -1% 0;
+}
+.preview_div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 .statistic>*{
     color: aliceblue;
@@ -88,7 +106,14 @@ main{
     border: 1px solid white;
     border-radius: 10px;
     padding: 1% 6%;
-    margin: 15%;
+    margin: 5%;
+}
+.imgz{
+    transition: transform 0.3s;
+}
+.imgz:hover{
+    transform:scale(1.1);
+
 }
 #div__img{
     display:flex ;
@@ -110,15 +135,14 @@ main{
 footer{
     background-color: #0A0A0A;
     display: flex; 
-    /* justify-content: space-between; */
     align-items: center;
+    justify-content: space-between;
     margin-top: 5%;
 }
 #footerline{
     height: 1px;
     width: 100%;
     background-color: white;
-    margin-top: -18%;
 }
 .div__logo{
     display: flex;
@@ -126,18 +150,19 @@ footer{
 }
 .div__logo>*{
     align-items: center;
+    
 }
 .div__socialmedia{
     display: flex;
     flex-direction: column;
 }
 .div__socialmedia>*{
-    width: 80%;
+    width: 70%;
 }
 .footerlink{
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     text-decoration: none;
     color: antiquewhite;
     width: 10%;
